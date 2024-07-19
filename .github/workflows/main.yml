@@ -5,3 +5,11 @@ on:
     branches:
     - main
 
+jobs:
+  deploy_to_lambda:
+    name: deploy to lambda
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: list folder
+        run: ls -l
