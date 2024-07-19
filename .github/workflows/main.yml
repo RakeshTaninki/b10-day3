@@ -17,3 +17,5 @@ jobs:
         run: zip python.zip lambda_function.py
       - name: list folder
         run: ls -l
+      - name: aws command
+        run: aws lambda update-function-code --function-name  GitLambda --zip-file fileb://python.zip --region ap-south-1
