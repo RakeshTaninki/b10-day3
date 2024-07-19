@@ -14,7 +14,7 @@ jobs:
       - name: list folder
         run: ls -l
       - name: zip file creation
-        run: zip python.zip lambda_function.py
+        run: zip python.zip lambda_function.py hello.py
       - name: list folder
         run: ls -l
       - name: aws command
